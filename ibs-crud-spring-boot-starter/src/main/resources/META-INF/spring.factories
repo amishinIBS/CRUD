@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+ru.ibs.crud.spring.boot.starter.config.DefaultCrudConfig

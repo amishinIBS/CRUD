@@ -1,0 +1,19 @@
+spring:
+  datasource:
+      #    url: jdbc:mysql://172.18.0.2:3306/EXAMPLE?createDatabaseIfNotExist=true
+      #    driver-class-name: com.mysql.cj.jdbc.Driver
+      #    username: root
+      #    password: mysql
+      url: jdbc:postgresql://localhost:5432/crud
+      driver-class-name: org.postgresql.Driver
+      username: user
+      password: user
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQL10Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      javax:
+        persistence:
+          create-database-schemas: true

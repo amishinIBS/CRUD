@@ -1,0 +1,6 @@
+package ru.ibs.crud.core.params;
+
+public enum Operator {
+    EQ, LIKE, ILIKE, BETWEEN, MORE, MORE_EQ, LESS, LESS_EQ, IN, STARTS_WITH, IS_NULL, IS_NOT_NULL,
+    NOT_EQ, NOT_LIKE, NOT_ILIKE, NOT_BETWEEN, NOT_MORE, NOT_MORE_EQ, NOT_LESS, NOT_IN, NOT_STARTS_WITH
+}

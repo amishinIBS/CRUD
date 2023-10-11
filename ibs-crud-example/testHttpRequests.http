@@ -1,0 +1,49 @@
+POST http://localhost:8080/crud/ExampleEntity
+Content-Type: application/json
+
+{"id": 16,"exampleValue": "post","exampleFieldOne": "exampleFieldOne_21313123", "exampleFieldTwo":  23424234}
+
+<> 2021-08-19T133541.500.json
+
+###
+
+PUT http://localhost:8080/crud/ExampleEntity/16
+Content-Type: application/json
+
+{"exampleValue": "post","exampleFieldOne": "put", "exampleFieldTwo":  23424234}
+
+<> 2021-08-19T133541.500.json
+
+###
+
+POST http://localhost:8080/crud/AnotherExampleEntity
+Content-Type: application/json
+
+{"anotherExampleValue": "post","anotherExampleFieldUno": "exampleFieldOne_21313123", "anotherExampleFieldDuo":  23424234}
+
+<> 2021-08-19T133541.500.json
+
+###
+
+GET http://localhost:8080/find/ExampleEntity?page=0&limit=1000&filters[0].property=exampleFieldTwo&filters[0].operator=EQ&filters[0].value=23424234
+Content-Type: application/json
+
+<> 2021-07-19T130902.200.json
+
+###
+
+POST http://localhost:8080/find/ExampleEntity
+Content-Type: application/json
+
+{"page": 0, "limit":  1000, "filters":  [{"property": "exampleFieldOne", "operator": "EQ", "value": "put"}]}
+
+<> 2021-07-19T130902.200.json
+
+###
+
+DELETE http://localhost:8080/crud/ExampleEntity/16
+Content-Type: application/json
+
+<> 2021-07-19T130903.200.json
+
+###
